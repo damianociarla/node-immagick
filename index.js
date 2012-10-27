@@ -1,1 +1,1 @@
-module.exports = require('./lib/imagick');
+module.exports = require('./lib/Immagick');
