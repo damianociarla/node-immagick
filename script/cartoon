@@ -122,7 +122,7 @@ if [ $# -eq 0 ]
    echo ""
    usage2
    exit 0
-elif [ $# -gt 14 ]
+elif [ $# -gt 16 ]
 	then
 	errMsg "--- TOO MANY ARGUMENTS WERE PROVIDED ---"
 else
@@ -134,6 +134,10 @@ else
 					   echo ""
 					   usage2
 					   exit 0
+					   ;;
+				-dir)  # Change processing directory
+					   shift  # to get the next parameter
+					   dir="$1"
 					   ;;
 				-m)    # get method
 					   shift  # to get the next parameter

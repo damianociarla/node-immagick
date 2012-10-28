@@ -197,7 +197,7 @@ if [ $# -eq 0 ]
    echo ""
    usage2
    exit 0
-elif [ $# -eq 3 -o $# -eq 5 -o $# -eq 7 -o $# -gt 8 ]
+elif [ $# -eq 3 -o $# -eq 5 -o $# -eq 7 -o $# -gt 10 ]
 	then
 	errMsg "--- TOO MANY ARGUMENTS WERE PROVIDED ---"
 else
@@ -209,6 +209,10 @@ else
 					   echo ""
 					   usage2
 					   exit 0
+					   ;;
+				-dir)  # Change processing directory
+					   shift  # to get the next parameter
+					   dir="$1"
 					   ;;
 				-f)    # get filter
 					   shift  # to get the next parameter - filter

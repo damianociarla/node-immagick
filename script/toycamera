@@ -184,7 +184,7 @@ if [ $# -eq 0 ]
    echo ""
    usage2
    exit 0
-elif [ $# -gt 33 ]
+elif [ $# -gt 35 ]
 	then
 	errMsg "--- TOO MANY ARGUMENTS WERE PROVIDED ---"
 else
@@ -196,6 +196,10 @@ else
 					   echo ""
 					   usage2
 					   exit 0
+					   ;;
+				-dir)  # Change processing directory
+					   shift  # to get the next parameter
+					   dir="$1"
 					   ;;
 				-g)    # set  gray
 					   gray="yes"
