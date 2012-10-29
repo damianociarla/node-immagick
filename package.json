@@ -11,7 +11,6 @@
 	},
 	"main": "./index.js",
 	"dependencies": {
-		"when" : ">= 0.0.1",
-		"imagemagick-identify-parser" : ">= 0.0.1"
+		"when" : ">= 0.0.1"
 	}
 }
