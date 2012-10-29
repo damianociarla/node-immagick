@@ -1,7 +1,7 @@
 {
 	"name": "immagick",
 	"description": "Include resize and cropping function, instagram filters and script for the manipulation of the images",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": {
 		"name": "Damiano Ciarla",
 		"email": "damiano.ciarl@gmail.com"
